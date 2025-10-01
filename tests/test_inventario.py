@@ -1,4 +1,9 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.inventario import calcular_stock
+
 
 def test_calcular_stock():
     assert calcular_stock(10, 3) == 7
